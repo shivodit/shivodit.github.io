@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YF2KXTGTBL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YF2KXTGTBL');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3271889417654710"
+     crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    /* Basic reset and full-screen styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #000;
+      overflow: hidden;
+      font-family: sans-serif;
+      cursor: none; /* Hide default cursor */
+    }
+    /* Custom hollow white circle cursor */
+    #customCursor {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+    }
+    /* Positioning for blog link and hello text */
+    .blog-link, .hello {
+      position: absolute;
+      left: 50px;
+      color: #fff;
+    }
+    .blog-link {
+      bottom: 90px;
+      font-size: 32px;
+      text-decoration: none;
+      transition: transform 0.3s ease, text-shadow 0.3s ease;
+    }
+    /* Subtle futuristic hover animation on the blog link */
+    .blog-link:hover {
+      background-color: #fff;
+      color: #000;
+    }
+    .hello {
+      bottom: 40px;
+      font-size: 32px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Custom cursor element -->
+  <div id="customCursor"></div>
+  <!-- Blog link and hello text -->
+  <a href="https://shivodit.github.io/singularity/" class="blog-link">SINGULARITY</a>
+  <div class="hello">SHIVODIT</div>
+  <script>
+    // Update custom cursor position based on mouse movements
+    const cursor = document.getElementById('customCursor');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+  </script>
+</body>
+</html>
